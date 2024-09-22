@@ -67,7 +67,8 @@ fun TipTimeLayout() {
     var roundUp by remember { mutableStateOf(false) }
 
     Column(
-        modifier = Modifier.padding(40.dp),
+        modifier = Modifier.padding(40.dp)
+        .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
